@@ -44,7 +44,7 @@ let computerScore = 0
         else if (playRound === "you lose...sorry"){
         computerScore++;
     }
-        else (playRound === "it's a tie!"){
+        else {
         console.log("tie");
         playRound();
   }
