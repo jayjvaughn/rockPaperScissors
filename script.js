@@ -38,11 +38,11 @@ let computerScore = 0
    playRound();
 
     if (playRound === "you win!"){
-        let playerScore ++;
+        playerScore++;
     
     }
         else if (playRound === "you lose...sorry"){
-        let computerScore ++;
+        computerScore++;
     }
         else (playRound === "it's a tie!"){
         console.log("tie");
