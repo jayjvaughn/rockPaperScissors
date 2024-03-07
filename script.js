@@ -4,7 +4,8 @@
 const choices = ["rock", "paper", "scissors"]
 const computerSelection = choices[Math.floor(Math.random() * choices.length )];
 let playerSelection = prompt("");
-
+let playerScore = 0
+let computerScore = 0
 
 
  function getComputerChoice(){
@@ -29,5 +30,22 @@ let playerSelection = prompt("");
         }
   }
  // major change
-  console.log(playRound(playerSelection,getComputerChoice()))
-  
+  console.log(playRound(playerSelection,getComputerChoice()));
+
+  // game time 
+  function playGame(playRound){
+
+   playRound();
+
+    if (playRound === "you win!"){
+        let playerScore ++;
+    
+    }
+        else if (playRound === "you lose...sorry"){
+        let computerScore ++;
+    }
+        else (playRound === "it's a tie!"){
+        console.log("tie");
+        playRound();
+  }
+}
