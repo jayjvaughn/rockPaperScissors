@@ -3,9 +3,7 @@
 
 const choices = ["rock", "paper", "scissors"]
 const computerSelection = choices[Math.floor(Math.random() * choices.length )];
-let playerSelection = prompt("");
-let playerScore = 0
-let computerScore = 0
+let playerSelection = prompt("").toLowerCase();
 
 
  function getComputerChoice(){
@@ -24,28 +22,32 @@ let computerScore = 0
         return "it's a tie!";
     }
    
-
         else {
             return "you lose...sorry";
         }
   }
- // major change
-  console.log(playRound(playerSelection,getComputerChoice()));
 
   // game time 
   function playGame(playRound){
+    let playerScore = 0
+    let computerScore = 0
 
-   playRound();
 
-    if (playRound === "you win!"){
+     if (playRound === "you win!"){
+        alert ("you win!");
+        console.log("Luck was on your side, lets try again");
         playerScore++;
     
     }
         else if (playRound === "you lose...sorry"){
+            alert("you lose...sorry");
+            console.log("that's a point for the computer..");
         computerScore++;
     }
         else {
         console.log("tie");
-        playRound();
   }
-}
+    console.log(playerScore);
+    console.log(computerScore);
+  }
+  playGame(playRound(playerSelection, getComputerChoice()));
