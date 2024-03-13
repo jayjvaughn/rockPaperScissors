@@ -14,7 +14,7 @@ let playerSelection = prompt("").toLowerCase();
  }
 
  function playRound(playerSelection, computerSelection){
-    playerSelection = prompt("").toLowerCase();
+    getComputerChoice();
 
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
         return "you win!";
@@ -27,61 +27,81 @@ let playerSelection = prompt("").toLowerCase();
             return "you lose...sorry";
         }
   }
+//   console.log(`You chose ${playerSelection}!` );
+//   console.log(`The computer chose ${computerSelection}!` );
+//   console.log(playRound(playerSelection, computerSelection));
 
-  // game time 
-  function playGame(playRound){
-    let playerScore = 0
+//   game time 
+  function playGame(){
+    let playerscore = 0
     let computerScore = 0
-    for (let i=0; i<5; i++){
-  
 
-
-     if (playRound === "you win!"){
-        alert ("you win!");
-        console.log("1 point for you");
-        playerScore++;
-    
+    if (playRound === "you win!"){
+        alert("you win!")
+        playerscore++;
     }
-        else if (playRound === "you lose...sorry"){
-            alert("you lose...sorry");
-            console.log("1 point for the computer..");
+    else if (playRound === "you lose...sorry"){
+        alert("you lose...sorry");
         computerScore++;
     }
-        else {
-        console.log("tie");
-  }
-     console.log(playerScore);
-     console.log(computerScore);
-
-     // this is my addition....
-     
-     if (playerScore === 5){
-        alert ("CONGRATULATIONS, YOU WIN");
-        console.log("CONGRATULATIONS, YOU WIN");
-     }
-     else if (computerScore === 5){
-        alert ("SORRY, YOU LOSE");
-        console.log("SORRY, YOU LOSE");
-     }
-     else {
-
-     }
+    else {
+        alert("tie");
     }
+    console.log(playerscore);
+    consolelog(computerScore);
   }
 
-  playGame(playRound(playerSelection, getComputerChoice()));
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //     playerSelection = prompt("").toLowerCase();
+//     playRound(playerSelection, computerSelection);
 
-
-//   Winner announcement
-// function winner(){
-//     if (playerScore > computerScore){
-//         alert ("Game over, YOU WIN!!")
+    
+//      if (playRound === "you win!"){
+//         alert ("you win!");
+//         console.log("Thats a point for you!")
+//         playerScore++;
+    
 //     }
-//     else if (playerScore < computerScore){
-//             alert ("Game over, YOU LOSE!!")
+//         else if (playRound === "you lose...sorry"){
+//             alert("you lose...sorry");
+//             console.log("that's a point for the computer..");
+//         computerScore++;
 //     }
-//     else {
-//         alert ("TIED GAME, PLAY AGAIN..")
-//     }
+//         else {
+//         console.log("tie");
 //   }
-//   winner();
+//     console.log(playerScore);
+//     console.log(computerScore);
+//  }
+//     if (playerScore > computerScore){
+//     alert ("Game over, YOU WIN!!")
+// }
+//         else if (playerScore < computerScore){            
+//    alert ("Game over, YOU LOSE!!")
+// }
+//     else {
+//   alert ("TIED GAME, PLAY AGAIN..")
+// }
+//   }
+
+//   playGame();
