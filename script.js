@@ -55,15 +55,17 @@ let playerSelection = prompt("").toLowerCase();
     }
      // this is my addition....
      
-     if (playerScore === 5){
+     if (playerScore >= computerScore){
         alert ("CONGRATULATIONS, YOU WIN");
         console.log("CONGRATULATIONS, YOU WIN");
      }
-     else if (computerScore === 5){
-        alert ("SORRY, YOU LOSE");
-        console.log("SORRY, YOU LOSE");
+     else if (playerScore === computerScore){
+        alert ("TIED GAME");
+        console.log("TIED GAME");
      }
      else {
+        alert ("SORRY, YOU LOSE");
+        console.log("SORRY, YOU LOSE");
 
      }
     }
