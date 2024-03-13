@@ -29,47 +29,46 @@ let playerSelection = prompt("").toLowerCase();
   }
 
 //   // game time 
-//   function playGame(playRound){
-//     let playerScore = 0
-//     let computerScore = 0
-//     for (let i=0; i<5; i++){
-
-//         playerSelection = prompt("").toLowerCase();
-  
-//      if (playRound === "you win!"){
-//         alert ("you win!");
-//         console.log("1 point for you");
-//         playerScore++;
-    
-//     }
-//         else if (playRound === "you lose...sorry"){
-//             alert("you lose...sorry");
-//             console.log("1 point for the computer..");
-//         computerScore++;
-//     }
-//         else {
-//             alert ("Tie game, Play again!")
-//         console.log("tie");
-//   }
-//      console.log(playerScore);
-//      console.log(computerScore);
-//     }
-//      // this is my addition....
+  function playGame(){
+    let playerScore = 0
+    let computerScore = 0
+    for (let i=0; i<5; i++){
+    let result = playRound();
      
-//      if (playerScore === 5){
-//         alert ("CONGRATULATIONS, YOU WIN");
-//         console.log("CONGRATULATIONS, YOU WIN");
-//      }
-//      else if (computerScore === 5){
-//         alert ("SORRY, YOU LOSE");
-//         console.log("SORRY, YOU LOSE");
-//      }
-//      else {
+     if (result === "you win!"){
+        alert ("you win!");
+        console.log("1 point for you");
+        playerScore++;
+    
+    }
+        else if (result === "you lose...sorry"){
+            alert("you lose...sorry");
+            console.log("1 point for the computer..");
+        computerScore++;
+    }
+        else {
+            alert ("Tie game, Play again!")
+        console.log("tie");
+  }
+     console.log(playerScore);
+     console.log(computerScore);
+    }
+     // this is my addition....
+     
+     if (playerScore === 5){
+        alert ("CONGRATULATIONS, YOU WIN");
+        console.log("CONGRATULATIONS, YOU WIN");
+     }
+     else if (computerScore === 5){
+        alert ("SORRY, YOU LOSE");
+        console.log("SORRY, YOU LOSE");
+     }
+     else {
 
-//      }
-//     }
+     }
+    }
 
-//   playGame(playRound(playerSelection, getComputerChoice()));
+  playGame();
 
 
 
