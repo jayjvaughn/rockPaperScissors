@@ -22,30 +22,11 @@ border-radius: 8px;
     gap: 2rem;
 }
 
-#rock {
-color: white;
-background-color: #008CBA;
-padding: 32px;
-font-size: 20px;
-border-radius: 8px;
-border: none;
-
-}
-
-#paper {
-color: white;
-background-color: #008CBA;
-padding: 32px;
-font-size: 20px;
-border-radius: 8px;
-border: none;
-}
-
-#scissors {
+#myButton {
     color: white;
-background-color: #008CBA;
-padding: 32px;
-font-size: 20px;
-border-radius: 8px;
-border: none;
+    background-color: #008CBA;
+    padding: 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
 }
