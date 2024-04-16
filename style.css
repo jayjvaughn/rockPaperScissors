@@ -22,7 +22,7 @@ border-radius: 8px;
     gap: 2rem;
 }
 
-#myButton {
+.gameButton button{
     color: white;
     background-color: #008CBA;
     padding: 32px;
