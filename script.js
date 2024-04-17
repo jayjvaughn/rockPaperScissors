@@ -2,31 +2,34 @@
 
 
 const choices = ["rock", "paper", "scissors"]
-// const computerSelection = choices[Math.floor(Math.random() * choices.length )];
-let playerSelection = prompt("").toLowerCase();
+const playerSelection = document.querySelectorAll("#rock", "#paper", "#scissors");
+rock.onclick = () => console.log("rock");
+paper.onclick = () => console.log("paper");
+scissors.onclick = () => console.log("scissors");
 
 
- function getComputerChoice(){
-     const computerSelection = choices[Math.floor(Math.random() * choices.length )];
-     return computerSelection;
+//  function getComputerChoice(){
+//      const computerSelection = choices[Math.floor(Math.random() * choices.length )];
+//      return computerSelection;
 
- }
+//  }
 
- function playRound(){
-   let playerSelection = prompt("").toLowerCase();
-    let computerSelection = getComputerChoice();
+//  function playRound(playerSelection){
+// //    let playerSelection = prompt("").toLowerCase();
+//     let computerSelection = getComputerChoice();
 
-    if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
-        return "you win!";
-   }
-        else if (playerSelection === computerSelection){
-        return "it's a tie!";
-    }
+//     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
+//         return "you win!";
+//    }
+//         else if (playerSelection === computerSelection){
+//         return "it's a tie!";
+//     }
    
-        else {
-            return "you lose...sorry";
-        }
-  }
+//         else {
+//             return "you lose...sorry";
+//         }
+//   }
+//   console.log(playRound(playerSelection));
 
 //   // game time 
 //   function playGame(){
@@ -70,7 +73,7 @@ let playerSelection = prompt("").toLowerCase();
 //      }
 //     }
 
-  playGame();
+//   playGame();
 
 
 
