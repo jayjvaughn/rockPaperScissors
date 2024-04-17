@@ -9,12 +9,18 @@
 <body>
     <div class="game">
         <h1>ROCK PAPER SCISSORS</h1>
-        <div class="gameButton">
-            <button id="rock">Rock</button>
-            <button id="paper">Paper</button>
-            <button id="scissors">Scissors</button>
+        <div class="gameButtons">
+            <button onclick="playRound('rock')">Rock</button>
+            <button onclick="playRound('paper')">Paper</button>
+            <button onclick="playRound('scissors')">Scissors</button>
         </div>
-        </div>
+              <div class="display">
+              <div id="playerChoice">You chose: </div>
+              <div id="computerChoice">Computer chose: </div>
+              <div id="gameResult">Tie </div>
+              </div>
+              
+        </div>        
     <script src="script.js"></script>
 </body>
 </html>

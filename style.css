@@ -15,14 +15,14 @@ padding: 32px;
 border-radius: 8px;
 }
 
-.gameButton {
+.gameButtons {
     display: flex;
     justify-content:center;
     align-items:center;
     gap: 2rem;
 }
 
-.gameButton button{
+.gameButtons button{
     color: white;
     background-color: #008CBA;
     padding: 32px;
@@ -30,4 +30,43 @@ border-radius: 8px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+}
+
+.game {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+color: #008CBA;
+text-align: center;
+border: 5px dotted;
+border-color: #008CBA;
+padding: 32px;
+border-radius: 8px;
+}
+
+.gameButtons {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    gap: 2rem;
+}
+
+.gameButtons button{
+    color: white;
+    background-color: #008CBA;
+    padding: 32px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.gameButtons button:hover{
+  background-color:#28c5f9
 }

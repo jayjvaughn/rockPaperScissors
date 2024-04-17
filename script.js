@@ -2,11 +2,24 @@
 
 
 const choices = ["rock", "paper", "scissors"]
-const playerSelection = document.querySelectorAll("#rock", "#paper", "#scissors");
-rock.onclick = () => console.log("rock");
-paper.onclick = () => console.log("paper");
-scissors.onclick = () => console.log("scissors");
+const playerButtons = document.querySelectorAll("#rock", "#paper", "#scissors");
+// rock.onclick = () => console.log("rock");
+// paper.onclick = () => console.log("paper");
+// scissors.onclick = () => console.log("scissors");
+playerButtons.forEach((playerButtons)=> {
+    rock.addEventListener("click",()=> {
+        return rock;
+    });
+});
 
+
+
+// const playerSelection = document.querySelectorAll("#rock", "#paper", "#scissors");
+// rock.onclick = () => {return "rock"};
+// paper.onclick = () => {return "paper"};
+// scissors.onclick = () => {return "scissors"};
+
+console.log(playerButtons);
 
 //  function getComputerChoice(){
 //      const computerSelection = choices[Math.floor(Math.random() * choices.length )];
@@ -16,6 +29,7 @@ scissors.onclick = () => console.log("scissors");
 
 //  function playRound(playerSelection){
 // //    let playerSelection = prompt("").toLowerCase();
+//     let playerSelection = playerButtons.toString();
 //     let computerSelection = getComputerChoice();
 
 //     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
