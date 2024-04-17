@@ -1,49 +1,30 @@
-// rock paper scissors v3
+// rock paper scissors v4
+
+const choices = ["rock", "paper", "scissors"];
+const playerChoice = document.getElementById("playerChoice");
+const computerChoice = document.getElementById("computerChoice");
+const gameResult = document.getElementById("gameResult");
 
 
-const choices = ["rock", "paper", "scissors"]
-const playerButtons = document.querySelectorAll("#rock", "#paper", "#scissors");
-// rock.onclick = () => console.log("rock");
-// paper.onclick = () => console.log("paper");
-// scissors.onclick = () => console.log("scissors");
-playerButtons.forEach((playerButtons)=> {
-    rock.addEventListener("click",()=> {
-        return rock;
-    });
-});
+ function playRound(playerSelection){
+    const computerSelection = choices[Math.floor(Math.random() * choices.length )];
+   let result = "";
 
-
-
-// const playerSelection = document.querySelectorAll("#rock", "#paper", "#scissors");
-// rock.onclick = () => {return "rock"};
-// paper.onclick = () => {return "paper"};
-// scissors.onclick = () => {return "scissors"};
-
-console.log(playerButtons);
-
-//  function getComputerChoice(){
-//      const computerSelection = choices[Math.floor(Math.random() * choices.length )];
-//      return computerSelection;
-
-//  }
-
-//  function playRound(playerSelection){
-// //    let playerSelection = prompt("").toLowerCase();
-//     let playerSelection = playerButtons.toString();
-//     let computerSelection = getComputerChoice();
-
-//     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
-//         return "you win!";
-//    }
-//         else if (playerSelection === computerSelection){
-//         return "it's a tie!";
-//     }
+    if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
+        result = "you win!";
+   }
+        else if (playerSelection === computerSelection){
+        result = "It's a tie!";
+    }
    
-//         else {
-//             return "you lose...sorry";
-//         }
-//   }
-//   console.log(playRound(playerSelection));
+        else {
+            result = "You LOSE...sorry";
+        }
+   
+   playerChoice.textContent = `You chose: ${playerSelection}`;
+   computerChoice.textContent = `You chose: ${computerSelection}`;
+   gameResult.textContent = result;
+  }
 
 //   // game time 
 //   function playGame(){

@@ -4,6 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 h1 {
@@ -70,3 +71,15 @@ border-radius: 8px;
 .gameButtons button:hover{
   background-color:#28c5f9
 }
+
+#playerChoice, #computerChoice{
+    font-size: 20px;
+    font-weight: bold;
+    color: #008CBA;
+  }
+  #gameResult{
+    font-size:30px;
+    font-weight: bold;
+    color: #008CBA;
+  }
+  
