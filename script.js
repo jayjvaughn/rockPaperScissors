@@ -4,14 +4,16 @@ const choices = ["rock", "paper", "scissors"];
 const playerChoice = document.getElementById("playerChoice");
 const computerChoice = document.getElementById("computerChoice");
 const gameResult = document.getElementById("gameResult");
+const yourScore = document.getElementById("yourScore");
+const computerScore = document.getElementById("computerScore");
 
 
  function playRound(playerSelection){
     const computerSelection = choices[Math.floor(Math.random() * choices.length )];
-   let result = "";
+    let result = "";
 
     if (playerSelection === "rock" && computerSelection === "scissors" || playerSelection === "scissors" && computerSelection === "paper" || playerSelection === "paper" && computerSelection === "rock"){
-        result = "you win!";
+        result = "You win!";
    }
         else if (playerSelection === computerSelection){
         result = "It's a tie!";
@@ -26,55 +28,41 @@ const gameResult = document.getElementById("gameResult");
    gameResult.textContent = result;
   }
 
-//   // game time 
+  // game time 
 //   function playGame(){
 //     let playerScore = 0
 //     let computerScore = 0
 //     for (let i=0; i<5; i++){
-//     let result = playRound();
+//     result = playRound();
      
 //      if (result === "you win!"){
-//         alert ("you win!");
-//         console.log("1 point for you");
-//         playerScore++;
+//         yourScore++;
+//         yourScore.textContent = `Your score: ${yourScore}`;
     
 //     }
-//         else if (result === "you lose...sorry"){
-//             alert("you lose...sorry");
-//             console.log("1 point for the computer..");
+//         else if (result === "You LOSE...sorry"){
 //         computerScore++;
+//         computerScore.textContent = `Your score: ${computerScore}`;
 //     }
 //         else {
-//             alert ("Tie game, Play again!")
-//         console.log("tie");
-//   }
-//      console.log(playerScore);
-//      console.log(computerScore);
+            
+//         }
 //     }
-//      // this is my addition....
+     // this is my addition....
      
-//      if (playerScore >= computerScore){
-//         alert ("CONGRATULATIONS, YOU WIN");
-//         console.log("CONGRATULATIONS, YOU WIN");
-//      }
-//      else if (playerScore === computerScore){
-//         alert ("TIED GAME");
-//         console.log("TIED GAME");
-//      }
-//      else {
-//         alert ("SORRY, YOU LOSE");
-//         console.log("SORRY, YOU LOSE");
+    //  if (playerScore >= computerScore){
+    //     alert ("CONGRATULATIONS, YOU WIN");
+    //     console.log("CONGRATULATIONS, YOU WIN");
+    //  }
+    //  else if (playerScore === computerScore){
+    //     alert ("TIED GAME");
+    //     console.log("TIED GAME");
+    //  }
+    //  else {
+    //     alert ("SORRY, YOU LOSE");
+    //     console.log("SORRY, YOU LOSE");
 
-//      }
-//     }
+    //  }
+    // }
 
 //   playGame();
-
-
-
-
-
-
-
-
-

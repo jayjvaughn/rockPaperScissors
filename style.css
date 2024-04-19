@@ -1,5 +1,5 @@
 .game {
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,6 +73,7 @@ border-radius: 8px;
 }
 
 #playerChoice, #computerChoice{
+    margin: 15px;
     font-size: 20px;
     font-weight: bold;
     color: #008CBA;
@@ -82,4 +83,11 @@ border-radius: 8px;
     font-weight: bold;
     color: #008CBA;
   }
+
+  .score{
+  margin: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #008CBA;
+}
   
